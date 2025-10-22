@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BNB Fuel</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- ✅ Preload images -->
+  <link rel="preload" as="image" href="station_hover_tokenomics.png">
+  <link rel="preload" as="image" href="station_hover_contract.png">
+  <link rel="preload" as="image" href="station_hover_links.png">
+  <link rel="preload" as="image" href="station_on.png" />
+  <link rel="preload" as="image" href="station_off.png" />
+  <link rel="preload" as="image" href="rewards.png" />
+</head>
+
+<body>
+ 
+  <div id="root">
+    <div class="stage" id="stage">
+      <picture id="stationPicture">
+ <img id="station" alt="BNB Fuel Station" />
+  <img id="stationOverlay" alt="" />
+  <img id="rewardsOverlay" src="rewards.png" alt="Rewards Overlay" />
+</picture>
+
+
+      <!-- Hotspots -->
+      <button class="hotspot" id="hs-tokenomics" aria-label="Show tokenomics"></button>
+      <button class="hotspot" id="hs-contract" aria-label="Show contract address"></button>
+      <button class="hotspot" id="hs-links" aria-label="Show links"></button>
+    </div>
+  </div>
+
+  <!-- CONTRACT MODAL -->
+  <div class="modal" id="modal-contract" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="contract-title">
+      <h2 id="contract-title">Contract Address</h2>
+      <code id="contract-value">0x...</code>
+      <div class="modal-actions">
+        <button id="copyContract">Copy</button>
+        <button data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LINKS MODAL -->
+  <div class="modal" id="modal-links" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="links-title">
+      <h2 id="links-title">Official Links</h2>
+      <div class="links-grid">
+        <a id="lnk-buy" class="link-btn" target="_blank" rel="noopener">Buy</a>
+        <a id="lnk-chart" class="link-btn" target="_blank" rel="noopener">Chart</a>
+        <a id="lnk-dextools" class="link-btn" target="_blank" rel="noopener">DEXTools</a>
+        <a id="lnk-telegram" class="link-btn" target="_blank" rel="noopener">Telegram</a>
+        <a id="lnk-twitter" class="link-btn" target="_blank" rel="noopener">X / Twitter</a>
+        <a id="lnk-whitepaper" class="link-btn" target="_blank" rel="noopener">Whitepaper</a>
+      </div>
+      <div class="modal-actions">
+        <button data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOKENOMICS MODAL -->
+  <div class="modal" id="modal-tokenomics" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="toks-title">
+      <h2 id="toks-title">Tokenomics</h2>
+      <table class="tok-table">
+        <tbody>
+          <tr><th>Total Supply</th><td id="tok-supply"></td></tr>
+          <tr><th>Buy/Sell Tax</th><td id="tok-tax"></td></tr>
+          <tr><th>Liquidity</th><td id="tok-liq"></td></tr>
+        </tbody>
+      </table>
+      <div class="modal-actions">
+        <button data-close>Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

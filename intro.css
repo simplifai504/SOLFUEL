@@ -1,0 +1,90 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: system-ui, sans-serif;
+  color: #fff;
+}
+
+/* WRAPPER — scale down size */
+.can-wrapper {
+  position: relative;
+  width: 300px;     /* ⬅️ was 1080px — reduced */
+  height: 300px;    /* keep it square since your image is square */
+  max-width: 80vw;  /* make it responsive */
+  max-height: 80vw;
+}
+
+/* TANK — mask stays scaled with wrapper */
+.tank {
+  position: absolute;
+  inset: 0;
+  mask-image: url('jerrycan-mask.png');
+  -webkit-mask-image: url('jerrycan-mask.png');
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+  -webkit-mask-size: 100% 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* WAVE */
+.wave {
+  background: #f8d33a;
+  position: absolute;
+  top: 110%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 38%;
+  transform: rotate(0deg);
+  animation: waveRotate 30s linear infinite;
+}
+
+.tank.filling .wave {
+  animation:
+    waveRotate 30s linear infinite,
+    waveFill 4s ease-out forwards;
+}
+
+@keyframes waveRotate {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(3600deg); }
+}
+
+@keyframes waveFill {
+  0%   { top: 110%; }
+  100% { top: 0%; }
+}
+
+/* OUTLINE — scaled with wrapper */
+.can-outline {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Percentage text */
+#fuelText {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #F3BA2F;
+  text-align: center;
+}

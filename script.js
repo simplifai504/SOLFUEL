@@ -7,10 +7,10 @@ const LINKS = {
   CHART: "https://example.com/chart",
   DEXTOOLS: "https://www.dextools.io",
   TELEGRAM: "https://t.me/yourchannel",
-  TWITTER: "https://x.com/yourhandle",
+  TWITTER: "https://x.com/SolFuelCoin",
   WHITEPAPER: "https://sol-fuel.gitbook.io/sol-fuel-docs/",
 };
-const TOKENOMICS = { supply: "1,000,000,000 $BIFUEL", tax: "0%", liquidity: "Locked" };
+const TOKENOMICS = { supply: "1,000,000,000 $SOLFUEL", tax: "0%", liquidity: "Locked" };
 
 const HERO_IMAGES = {
   desktop: {
@@ -82,7 +82,7 @@ stationImg.addEventListener("load", () => {
  * HOTSPOTS MAP
  *****************/
 const HS_LANDSCAPE = {
-  tokenomics: { id: "hs-tokenomics", x: 0.2000, y: 0.6470, w: 0.0960, h: 0.0360, skew: -7, rot: -7 },
+  tokenomics: { id: "hs-tokenomics", x: 0.1500, y: 0.6470, w: 0.0960, h: 0.0360, skew: -7, rot: -7 },
   contract:  { id: "hs-contract",  x: 0.4810, y: 0.6450, w: 0.1020, h: 0.0340, skew: -4, rot: 5.2 },
   links:     { id: "hs-links",     x: 0.6610, y: 0.6710, w: 0.0480, h: 0.0290, skew: -5, rot: 2.2 },
 };

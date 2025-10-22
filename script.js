@@ -82,9 +82,9 @@ stationImg.addEventListener("load", () => {
  * HOTSPOTS MAP
  *****************/
 const HS_LANDSCAPE = {
-  tokenomics: { id: "hs-tokenomics", x: 0.1470, y: 0.6470, w: 0.0960, h: 0.0360, skew: -7, rot: -7 },
+  tokenomics: { id: "hs-tokenomics", x: 0.1450, y: 0.6470, w: 0.0960, h: 0.0360, skew: -7, rot: -7 },
   contract:  { id: "hs-contract",  x: 0.4810, y: 0.6450, w: 0.1020, h: 0.0340, skew: -4, rot: 5.2 },
-  links:     { id: "hs-links",     x: 0.6620, y: 0.6710, w: 0.0480, h: 0.0290, skew: -5, rot: 2.2 },
+  links:     { id: "hs-links",     x: 0.6640, y: 0.6710, w: 0.0480, h: 0.0290, skew: -5, rot: 2.2 },
 };
 
 function hydrate(map) { Object.values(map).forEach((s) => { s.el = document.getElementById(s.id) || null; }); }

@@ -42,7 +42,7 @@ body {
 
 /* WAVE */
 .wave {
-  background: #f8d33a;
+  background: #7d0bf1;
   position: absolute;
   top: 110%;
   left: -50%;
@@ -85,6 +85,6 @@ body {
   margin-top: 20px;
   font-size: 22px;
   font-weight: bold;
-  color: #F3BA2F;
+  color: #7d0bf1;
   text-align: center;
 }

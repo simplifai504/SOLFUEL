@@ -5,7 +5,7 @@ const CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000";
 const LINKS = {
   BUY: "https://example.com/buy",
   CHART: "https://example.com/chart",
-  DEXTOOLS: "https://www.dextools.io",
+  DEXSCREENER: "https://www.dexscreener.com",
   TELEGRAM: "https://t.me/yourchannel",
   TWITTER: "https://x.com/SolFuelCoin",
   WHITEPAPER: "https://sol-fuel.gitbook.io/sol-fuel-docs/",
@@ -213,7 +213,7 @@ document.getElementById("contract-value").textContent = CONTRACT_ADDRESS;
 
 document.getElementById("lnk-buy").href       = LINKS.BUY;
 document.getElementById("lnk-chart").href     = LINKS.CHART;
-document.getElementById("lnk-dextools").href  = LINKS.DEXTOOLS;
+document.getElementById("lnk-dexscreener").href  = LINKS.DEXSCREENER;
 document.getElementById("lnk-telegram").href  = LINKS.TELEGRAM;
 document.getElementById("lnk-twitter").href   = LINKS.TWITTER;
 document.getElementById("lnk-whitepaper").href= LINKS.WHITEPAPER;

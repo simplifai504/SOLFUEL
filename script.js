@@ -7,7 +7,7 @@ const LINKS = {
   CHART: "https://example.com/chart",
   DEXSCREENER: "https://www.dexscreener.com",
   TELEGRAM: "https://t.me/yourchannel",
-  TWITTER: "https://x.com/SolFuelCoin",
+  TWITTER: "https://x.com/TheSolFuel",
   WHITEPAPER: "https://sol-fuel.gitbook.io/sol-fuel-docs/",
 };
 const TOKENOMICS = { supply: "1,000,000,000 $SOLFUEL", tax: "0%", liquidity: "Locked" };

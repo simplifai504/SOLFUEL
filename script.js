@@ -1,11 +1,11 @@
 /*****************
  * CONFIG
  *****************/
-const CONTRACT_ADDRESS = "SOON";
+const CONTRACT_ADDRESS = "AxFVytVxyr8zNuWSddHGoGMNcJVbwa2vn3WUWTgepump";
 const LINKS = {
-  BUY: "https://example.com/buy",
+  BUY: "AxFVytVxyr8zNuWSddHGoGMNcJVbwa2vn3WUWTgepump",
   CHART: "https://example.com/chart",
-  DEXSCREENER: "https://www.dexscreener.com",
+  DEXSCREENER: "https://dexscreener.com/solana/AxFVytVxyr8zNuWSddHGoGMNcJVbwa2vn3WUWTgepump",
   TELEGRAM: "https://t.me/yourchannel",
   TWITTER: "https://x.com/TheSolFuel",
   WHITEPAPER: "https://sol-fuel.gitbook.io/sol-fuel-docs/",

@@ -1,7 +1,7 @@
 /*****************
  * CONFIG
  *****************/
-const CONTRACT_ADDRESS = "0x0000000000000000000000000000000000000000";
+const CONTRACT_ADDRESS = "SOON";
 const LINKS = {
   BUY: "https://example.com/buy",
   CHART: "https://example.com/chart",
